@@ -1,26 +1,19 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import Routes from "./Routes";
+import { ThemeProvider } from "./Contexts";
+import { Circle2 } from "react-preloaders2";
 
-function App() {
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <React.Fragment>
+      <ThemeProvider initialTheme="light">
+        <div className="w-full h-full bg-primaryLight dark:bg-secondaryDark transition-all duration-500">
+          <Routes />
+        </div>
+      </ThemeProvider>
+      <Circle2 background="#f6f8fd" color="#0b1622" time={2000} />
+    </React.Fragment>
   );
-}
+};
 
 export default App;

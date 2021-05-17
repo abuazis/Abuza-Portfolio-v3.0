@@ -1,0 +1,22 @@
+{
+  "brandName": "Abu Aziz",
+  "languages": ["English - EN", "Indonesian - ID", "Japanese - JP"],
+  "navigations": [
+    {
+      "name": "Introduction",
+      "route": "/introduction"
+    },
+    {
+      "name": "Projects",
+      "route": "/projects"
+    },
+    {
+      "name": "Skills & Tools",
+      "route": "/skillstools"
+    },
+    {
+      "name": "Contact",
+      "route": "/contact"
+    }
+  ]
+}

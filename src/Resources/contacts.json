@@ -1,0 +1,22 @@
+[
+  {
+    "name": "Whatsapp",
+    "contact": "0895-3967-80183",
+    "link": "https://wa.me/62895396780183"
+  },
+  {
+    "name": "Phone Call",
+    "contact": "0857-1846-5342",
+    "link": "tel:0857-1846-5342"
+  },
+  {
+    "name": "Email",
+    "contact": "abuaziscorp@gmail.com",
+    "link": "mailto:abuaziscorp@gmail.com"
+  },
+  {
+    "name": "Linked In",
+    "contact": "linkedin.com/abuazis",
+    "link": "https://id.linkedin.com/in/abuazis"
+  }
+]

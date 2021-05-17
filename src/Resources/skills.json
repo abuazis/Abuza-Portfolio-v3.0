@@ -1,0 +1,110 @@
+[
+  {
+    "name": "HTML",
+    "className": "devicon-html5-plain"
+  },
+  {
+    "name": "CSS",
+    "className": "devicon-css3-plain"
+  },
+  {
+    "name": "Javascript",
+    "className": "devicon-javascript-plain"
+  },
+  {
+    "name": "Material UI",
+    "className": "devicon-materialui-plain"
+  },
+  {
+    "name": "React",
+    "className": "devicon-react-plain"
+  },
+  {
+    "name": "Redux",
+    "className": "devicon-redux-plain"
+  },
+  {
+    "name": "NextJS",
+    "className": "devicon-nextjs-plain"
+  },
+  {
+    "name": "NodeJS",
+    "className": "devicon-nodejs-plain"
+  },
+  {
+    "name": "Express",
+    "className": "devicon-express-original"
+  },
+  {
+    "name": "React Native",
+    "className": "devicon-react-plain"
+  },
+  {
+    "name": "PHP",
+    "className": "devicon-php-plain"
+  },
+  {
+    "name": "Codeigniter",
+    "className": "devicon-codeigniter-plain"
+  },
+  {
+    "name": "Laravel",
+    "className": "devicon-laravel-plain"
+  },
+  {
+    "name": "Dart",
+    "className": "devicon-dart-plain"
+  },
+  {
+    "name": "Flutter",
+    "className": "devicon-flutter-plain"
+  },
+  {
+    "name": "Typescript",
+    "className": "devicon-typescript-plain"
+  },
+  {
+    "name": "NestJS",
+    "className": "devicon-nestjs-plain"
+  },
+  {
+    "name": "Java",
+    "className": "devicon-java-plain"
+  },
+  {
+    "name": "Firebase",
+    "className": "devicon-firebase-plain"
+  },
+  {
+    "name": "MongoDB",
+    "className": "devicon-mongodb-plain"
+  },
+  {
+    "name": "PostgreSQL",
+    "className": "devicon-postgresql-plain"
+  },
+  {
+    "name": "Figma",
+    "className": "devicon-figma-plain"
+  },
+  {
+    "name": "Git",
+    "className": "devicon-git-plain"
+  },
+  {
+    "name": "VS Code",
+    "className": "devicon-visualstudio-plain"
+  },
+  {
+    "name": "Android Studio",
+    "className": "devicon-android-plain"
+  },
+  {
+    "name": "Linux",
+    "className": "devicon-linux-plain"
+  },
+  {
+    "name": "Github",
+    "className": "devicon-github-original"
+  }
+]
