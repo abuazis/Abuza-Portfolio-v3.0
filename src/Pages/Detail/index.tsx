@@ -3,7 +3,7 @@ import React from "react";
 const Detail = (): JSX.Element => {
   return (
     <React.Fragment>
-      <h1>Detail Page</h1>
+      <div style={{ minHeight: "100vh" }}></div>
     </React.Fragment>
   );
 };

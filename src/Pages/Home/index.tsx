@@ -45,7 +45,7 @@ const Home = (): JSX.Element => {
   return (
     <React.Fragment>
       {/* Introduction */}
-      <section className="text-gray-600 body-font pt-14">
+      <section id="introduction" className="text-gray-600 body-font pt-14">
         <div className="container mx-auto flex px-8 sm:px-20 py-28 lg:flex-row flex-col items-center">
           <Fade>
             <div className="lg:flex-grow lg:w-1/2 lg:pr-16 flex flex-col lg:items-start lg:text-left mb-16 lg:mb-0 items-center text-center">
@@ -82,7 +82,7 @@ const Home = (): JSX.Element => {
       </section>
 
       {/* Project Section */}
-      <section className="text-gray-600 body-font">
+      <section id="projects" className="text-gray-600 body-font">
         <div className="container px-8 sm:px-20 py-6 pb-28 mx-auto">
           <Fade>
             <div className="flex flex-col text-center w-full mb-16">
@@ -115,7 +115,7 @@ const Home = (): JSX.Element => {
       </section>
 
       {/* Skills & Tools Section */}
-      <section className="text-gray-600 body-font">
+      <section id="skillstools" className="text-gray-600 body-font">
         <div className="container px-8 md:px-20 py-6 pb-16 mx-auto">
           <Fade>
             <div className="flex flex-col text-center w-full mb-16">
@@ -145,7 +145,7 @@ const Home = (): JSX.Element => {
       </section>
 
       {/* Contact Section */}
-      <section className="text-gray-600 body-font">
+      <section id="contact" className="text-gray-600 body-font">
         <div className="container px-8 md:px-20 py-6 pb-10 mx-auto">
           <Fade>
             <div className="flex flex-col text-center w-full mb-12">

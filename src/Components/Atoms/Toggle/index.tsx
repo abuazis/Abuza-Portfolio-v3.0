@@ -6,7 +6,7 @@ const Toggle = ({ handleShow }: AppProps): JSX.Element => {
   return (
     <button
       type="button"
-      className="inline-flex items-center justify-center p-2 rounded-md text-gray-400 text-secondary dark:text-white hover:text-opacity-60 hover:bg-gray-700 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-black dark:focus:ring-white transition-all duration-500"
+      className="inline-flex items-center justify-center p-2 rounded-md text-secondary dark:text-white hover:text-opacity-60 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-black dark:focus:ring-white transition-all duration-500"
       aria-controls="mobile-menu"
       aria-expanded="false"
       onClick={handleShow}

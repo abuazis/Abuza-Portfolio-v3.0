@@ -4,19 +4,23 @@
   "navigations": [
     {
       "name": "Introduction",
-      "route": "/introduction"
+      "route": "/#introduction",
+      "isSection": true
     },
     {
       "name": "Projects",
-      "route": "/projects"
+      "route": "/projects",
+      "isSection": false
     },
     {
       "name": "Skills & Tools",
-      "route": "/skillstools"
+      "route": "/#skillstools",
+      "isSection": true
     },
     {
       "name": "Contact",
-      "route": "/contact"
+      "route": "/#contact",
+      "isSection": true
     }
   ]
 }

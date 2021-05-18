@@ -53,7 +53,7 @@ const Dropdown = ({ active = "EN", datas }: AppProps): JSX.Element => {
               {datas.map((value) => (
                 <a
                   href="/"
-                  className="text-gray-700 block px-4 py-2 text-sm dark:text-fontDark hover:bg-primaryDark hover:opacity-40 transition-all duration-500"
+                  className="block px-4 py-2 text-sm dark:text-fontDark hover:dark:bg-primaryDark hover:opacity-40 transition-all duration-500"
                   role="menuitem"
                   tabIndex={-1}
                   id="menu-item-0"

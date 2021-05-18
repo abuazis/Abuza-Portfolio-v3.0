@@ -1,3 +1,4 @@
+import React from "react";
 import { Link } from "react-router-dom";
 
 type AppProps = {
@@ -5,6 +6,7 @@ type AppProps = {
   link: string;
   active: boolean;
   isMobile?: boolean;
+  isSection?: boolean;
 };
 
 const NavLink = ({
@@ -12,6 +14,7 @@ const NavLink = ({
   link,
   active = false,
   isMobile = false,
+  isSection,
 }: AppProps): JSX.Element => {
   return isMobile ? (
     <a
@@ -22,15 +25,28 @@ const NavLink = ({
       {title}
     </a>
   ) : (
-    <Link to={link} className="flex flex-col items-center justify-center">
-      <a
-        href={link}
-        className="text-secondary dark:text-white hover:text-opacity-60 font-medium transition-all duration-500"
-      >
-        {title}
-      </a>
-      {active && <div className="w-2/5 h-1 mt-1 rounded-full bg-tertiary" />}
-    </Link>
+    <React.Fragment>
+      {isSection ? (
+        <a
+          href={link}
+          className="flex flex-col items-center justify-center text-secondary dark:text-white hover:text-opacity-60 font-medium transition-all duration-500"
+        >
+          {title}
+        </a>
+      ) : (
+        <Link to={link} className="flex flex-col items-center justify-center">
+          <a
+            href={link}
+            className="text-secondary dark:text-white hover:text-opacity-60 font-medium transition-all duration-500"
+          >
+            {title}
+          </a>
+          {active && (
+            <div className="w-2/5 h-1 mt-1 rounded-full bg-tertiary" />
+          )}
+        </Link>
+      )}
+    </React.Fragment>
   );
 };
 

@@ -1,9 +1,12 @@
 import Fade from "react-reveal/Fade";
 import { useState } from "react";
+import { useLocation } from "react-router";
 import { NavbarResource } from "../../../Resources";
 import { Brand, SwitchMode, NavLink, Dropdown, Toggle } from "../../Atoms";
 
 const Navbar = (): JSX.Element => {
+  const { pathname } = useLocation();
+
   const [show, setShow] = useState(false);
 
   const handleShow = () => {
@@ -27,9 +30,10 @@ const Navbar = (): JSX.Element => {
                   {NavbarResource.navigations.map((value) => (
                     <NavLink
                       title={value.name}
-                      link={value.route}
+                      link={pathname === "/" ? value.route : "/"}
                       active={false}
                       isMobile={false}
+                      isSection={pathname === "/" ? value.isSection : false}
                     />
                   ))}
                   <Dropdown active="EN" datas={NavbarResource.languages} />
