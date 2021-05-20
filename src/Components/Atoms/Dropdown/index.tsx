@@ -52,7 +52,8 @@ const Dropdown = ({ active = "EN", datas }: AppProps): JSX.Element => {
             <div className="py-1" role="none">
               {datas.map((value) => (
                 <a
-                  href="/"
+                  href="#"
+                  onClick={handleOpen}
                   className="block px-4 py-2 text-sm dark:text-fontDark hover:dark:bg-primaryDark hover:opacity-40 transition-all duration-500"
                   role="menuitem"
                   tabIndex={-1}

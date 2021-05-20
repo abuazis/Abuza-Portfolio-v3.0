@@ -19,6 +19,10 @@ import IcWebWhite from "./ic_web_white.svg";
 import IcDesktopWhite from "./ic_desktop_white.svg";
 import IcMachineWhite from "./ic_machine_white.svg";
 import IcLibraryWhite from "./ic_library_white.svg";
+import IcBack from "./ic_back.svg";
+import IcBackWhite from "./ic_back_white.svg";
+import IcBrowser from "./ic_browser.svg";
+import IcBrowserWhite from "./ic_browser_white.svg";
 
 export {
   IcEye,
@@ -42,4 +46,8 @@ export {
   IcMobileWhite,
   IcWeb,
   IcWebWhite,
+  IcBack,
+  IcBackWhite,
+  IcBrowser,
+  IcBrowserWhite,
 };

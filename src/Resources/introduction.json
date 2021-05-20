@@ -10,7 +10,7 @@
     },
     {
       "title": "Contact Me",
-      "route": "/contact",
+      "route": "#contact",
       "isBordered": true
     }
   ]

@@ -64,6 +64,7 @@ const Home = (): JSX.Element => {
                     title={value.title}
                     link={value.route}
                     isBordered={value.isBordered}
+                    isSection={value.route === "#contact" ? true : false}
                   />
                 ))}
               </div>

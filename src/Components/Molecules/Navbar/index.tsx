@@ -30,10 +30,22 @@ const Navbar = (): JSX.Element => {
                   {NavbarResource.navigations.map((value) => (
                     <NavLink
                       title={value.name}
-                      link={pathname === "/" ? value.route : "/"}
                       active={false}
                       isMobile={false}
-                      isSection={pathname === "/" ? value.isSection : false}
+                      link={
+                        pathname === "/"
+                          ? value.route
+                          : value.route === "/projects"
+                          ? value.route
+                          : "/"
+                      }
+                      isSection={
+                        pathname === "/"
+                          ? value.isSection
+                          : value.route === "/projects"
+                          ? value.isSection
+                          : false
+                      }
                     />
                   ))}
                   <Dropdown active="EN" datas={NavbarResource.languages} />
@@ -53,9 +65,23 @@ const Navbar = (): JSX.Element => {
                 {NavbarResource.navigations.map((value) => (
                   <NavLink
                     title={value.name}
-                    link={value.route}
                     active={false}
                     isMobile={true}
+                    onClick={handleShow}
+                    link={
+                      pathname === "/"
+                        ? value.route
+                        : value.route === "/projects"
+                        ? value.route
+                        : "/"
+                    }
+                    isSection={
+                      pathname === "/"
+                        ? value.isSection
+                        : value.route === "/projects"
+                        ? value.isSection
+                        : false
+                    }
                   />
                 ))}
               </div>
