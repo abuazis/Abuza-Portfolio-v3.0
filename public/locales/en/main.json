@@ -1,0 +1,66 @@
+{
+  "introduction": {
+    "greeting": "Hi, こんにちは!",
+    "name": "My name is Abu Aziz",
+    "description": "I'm a Software Developer who focused on Mobile Development. I'm ready to execute your business ideas and build startup with work together and smartly to reach out success. Let's start do it dude!"
+  },
+  "button": {
+    "projects": "See Projects",
+    "contact": "Contact Me"
+  },
+  "navigation": {
+    "introduction": {
+      "name": "Introduction",
+      "route": "/#introduction"
+    },
+    "projects": {
+      "name": "Projects",
+      "route": "/projects"
+    },
+    "skills": {
+      "name": "Skills & Tools",
+      "route": "/#skillstools"
+    },
+    "contact": {
+      "name": "Contact",
+      "route": "/#contact"
+    }
+  },
+  "projects": {
+    "selected": "Selected Projects",
+    "subtitle": "The best project I have ever worked on is below here",
+    "more": "Show More"
+  },
+  "skills": {
+    "title": "Skills & Tools",
+    "subtitle": "The tech stack is growing so fast, we have to be prepared for it"
+  },
+  "contact": {
+    "title": "Contact Me",
+    "subtitle": "Contact me if you are interested in executing your idea"
+  },
+  "portfolio": {
+    "title": "Portfolio Projects",
+    "subtitle": "All portfolio project I have ever worked on is below here"
+  },
+  "apps": {
+    "all": "All Projects",
+    "mobile": "Mobile Apps",
+    "web": "Web Apps",
+    "desktop": "Desktop Apps",
+    "ml": "Machine Learning",
+    "library": "Library / Tool"
+  },
+  "detail": {
+    "back": "Back to Projects",
+    "visit": "Visit Projects",
+    "available": "Is Available On",
+    "technology": "Technology & Architecture",
+    "language": "Language",
+    "framework": "Framework",
+    "database": "Database",
+    "library": "Library",
+    "architecture": "Architecture Pattern",
+    "resource": "Database & Resource"
+  }
+}

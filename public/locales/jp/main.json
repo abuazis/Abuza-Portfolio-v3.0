@@ -1,0 +1,71 @@
+{
+  "introduction": {
+    "greeting": "Hi, こんにちは!",
+    "name": "私の名前はアブアジズです",
+    "description": "私はモバイル開発に焦点を当てたソフトウェア開発者です。私はあなたのビジネスアイデアを実行し、成功に到達するために協力してスマートにスタートアップを構築する準備ができています。始めましょう！"
+  },
+  "button": {
+    "projects": "プロジェクト",
+    "contact": "連絡先"
+  },
+
+  "navigation": {
+    "introduction": {
+      "name": "イントロ",
+      "route": "/#introduction",
+      "isSection": true
+    },
+    "projects": {
+      "name": "プロジェクト",
+      "route": "/projects",
+      "isSection": false
+    },
+    "skills": {
+      "name": "スキルとツール",
+      "route": "/#skillstools",
+      "isSection": true
+    },
+    "contact": {
+      "name": "れんらくせん",
+      "route": "/#contact",
+      "isSection": true
+    }
+  },
+  "projects": {
+    "selected": "選択したプロジェクト",
+    "subtitle": "私が今まで取り組んだ中で最高のプロジェクトはここにあります",
+    "more": "もっと見せる"
+  },
+  "skills": {
+    "title": "スキルとツール",
+    "subtitle": "技術スタックは非常に急速に成長しているので、それに備える必要があります"
+  },
+  "contact": {
+    "title": "私に連絡して",
+    "subtitle": "あなたがあなたのアイデアを実行することに興味があるなら私に連絡してください"
+  },
+  "portfolio": {
+    "title": "ポートフォリオプロジェクト",
+    "subtitle": "私がこれまでに取り組んだすべてのポートフォリオプロジェクトは以下のとおりです"
+  },
+  "apps": {
+    "all": "すべてのプロジェクト",
+    "mobile": "モバイルアプリ",
+    "web": "ウェブサイトアプリ",
+    "desktop": "デスクトップアプリ",
+    "ml": "機械学習",
+    "library": "図書館 / ツール"
+  },
+  "detail": {
+    "back": "プロジェクトにモドル",
+    "visit": "プロジェクトにアクセス",
+    "available": "サバナはで利用可能です",
+    "technology": "テクノロジーとアーキテクチャ",
+    "language": "プログラミング言語",
+    "framework": "フレームワーク",
+    "database": "データベース",
+    "library": "図書館",
+    "architecture": "アーキテクチャパターン",
+    "resource": "データベースとリソース"
+  }
+}

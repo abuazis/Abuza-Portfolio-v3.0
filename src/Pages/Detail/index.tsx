@@ -1,6 +1,7 @@
 import Fade from "react-reveal/Fade";
 import { useContext } from "react";
 import { useHistory } from "react-router-dom";
+import { useTranslation } from "react-i18next";
 import { ThemeContext } from "../../Contexts";
 import {
   IcBack,
@@ -14,6 +15,8 @@ import {
 
 const Detail = (): JSX.Element => {
   const { goBack } = useHistory();
+
+  const { t } = useTranslation("main");
 
   const { theme }: any = useContext(ThemeContext);
 
@@ -30,7 +33,7 @@ const Detail = (): JSX.Element => {
               className="w-8 h-8 mr-2"
             />
             <p className="inline-flex text-base font-medium dark:text-white transition-all duration-500">
-              Back to Projects
+              {t("detail.back")}
             </p>
           </a>
         </div>
@@ -67,7 +70,7 @@ const Detail = (): JSX.Element => {
                 className="w-8 h-8 mr-2"
               />
               <p className="inline-flex text-base font-medium dark:text-white transition-all duration-500">
-                Visit Projects
+                {t("detail.visit")}
               </p>
             </a>
           </div>
@@ -119,7 +122,7 @@ const Detail = (): JSX.Element => {
           </div>
           <div className="flex flex-col w-full mb-16">
             <h2 className="text-2xl text-secondary text-center font-bold mb-5 dark:text-white transition-all duration-500">
-              Savana Is Available On :
+              Savana {t("detail.available")} :
             </h2>
             <div className="flex flex-col sm:flex-row justify-center items-center space-y-4 sm:space-y-0 sm:space-x-4">
               <a
@@ -138,12 +141,12 @@ const Detail = (): JSX.Element => {
           </div>
           <div className="flex flex-col w-full mb-10">
             <h2 className="text-2xl text-secondary font-bold mb-10 dark:text-white transition-all duration-500">
-              Technology & Architecture
+              {t("detail.technology")}
             </h2>
             <div className="flex flex-col xl:flex-row space-y-8 xl:space-y-0 xl:space-x-36">
               <div className="flex flex-col">
                 <h3 className="text-xl text-secondary font-bold mb-5 dark:text-white transition-all duration-500">
-                  Language :
+                  {t("detail.language")} :
                 </h3>
                 <ul className="list-disc ml-5">
                   <li className="mb-2 dark:text-fontDark transition-all duration-500">
@@ -156,7 +159,7 @@ const Detail = (): JSX.Element => {
               </div>
               <div className="flex flex-col">
                 <h3 className="text-xl text-secondary font-bold mb-5 dark:text-white transition-all duration-500">
-                  Framework :
+                  {t("detail.framework")} :
                 </h3>
                 <ul className="list-disc ml-5">
                   <li className="mb-2 dark:text-fontDark transition-all duration-500">
@@ -169,7 +172,7 @@ const Detail = (): JSX.Element => {
               </div>
               <div className="flex flex-col">
                 <h3 className="text-xl text-secondary font-bold mb-5 dark:text-white transition-all duration-500">
-                  Database :
+                  {t("detail.database")} :
                 </h3>
                 <ul className="list-disc ml-5">
                   <li className="mb-2 dark:text-fontDark transition-all duration-500">
@@ -182,7 +185,7 @@ const Detail = (): JSX.Element => {
               </div>
               <div className="flex flex-col">
                 <h3 className="text-xl text-secondary font-bold mb-5 dark:text-white transition-all duration-500">
-                  Library :
+                  {t("detail.library")} :
                 </h3>
                 <ul className="list-disc ml-5">
                   <li className="mb-2 dark:text-fontDark transition-all duration-500">
@@ -194,7 +197,7 @@ const Detail = (): JSX.Element => {
           </div>
           <div className="flex flex-col w-full mb-10">
             <h2 className="text-xl text-secondary font-bold mb-7 dark:text-white transition-all duration-500">
-              Architecture Pattern
+              {t("detail.architecture")}
             </h2>
             <div className="flex flex-col lg:flex-row space-y-2 lg:space-y-0 lg:space-x-10 mb-8 lg:mb-0">
               <div className="h-64 mb-8 w-full xl:w-1/2">
@@ -224,7 +227,7 @@ const Detail = (): JSX.Element => {
           </div>
           <div className="flex flex-col w-full mb-10">
             <h2 className="text-xl text-secondary font-bold mb-7 dark:text-white transition-all duration-500">
-              Database & Resource
+              {t("detail.resource")}
             </h2>
             <div className="flex flex-col lg:flex-row space-y-2 lg:space-y-0 lg:space-x-10 mb-8 lg:mb-0">
               <div className="h-64 mb-8 w-full xl:w-1/2">

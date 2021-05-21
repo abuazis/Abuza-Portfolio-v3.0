@@ -1,24 +1,33 @@
 import { useState } from "react";
+import { useTranslation } from 'react-i18next';
 import Fade from "react-reveal/Fade";
 
 type AppProps = {
   active: string;
   datas: string[];
+  languages: string[];
 };
 
-const Dropdown = ({ active = "EN", datas }: AppProps): JSX.Element => {
+const Dropdown = ({ active = "EN", datas, languages }: AppProps): JSX.Element => {
+  const { i18n } = useTranslation();
+
   const [open, setOpen] = useState(false);
 
   const handleOpen = () => {
     setOpen(!open);
   };
 
+  const changeLanguage = (language) => {
+    i18n.changeLanguage(language);
+    setOpen(!open);
+  }
+
   return (
     <div className="relative inline-block text-left">
       <div>
         <button
           type="button"
-          className="inline-flex justify-center w-full py-6 text-sm font-medium text-secondary dark:text-white hover:text-opacity-60 focus:outline-none transition-all duration-500"
+          className="inline-flex justify-center w-full py-6 text-sm uppercase font-medium text-secondary dark:text-white hover:text-opacity-60 focus:outline-none transition-all duration-500"
           id="menu-button"
           aria-expanded="true"
           aria-haspopup="true"
@@ -50,10 +59,10 @@ const Dropdown = ({ active = "EN", datas }: AppProps): JSX.Element => {
             tabIndex={-1}
           >
             <div className="py-1" role="none">
-              {datas.map((value) => (
+              {datas.map((value, index) => (
                 <a
                   href="#"
-                  onClick={handleOpen}
+                  onClick={() => changeLanguage(languages[index])}
                   className="block px-4 py-2 text-sm dark:text-fontDark hover:dark:bg-primaryDark hover:opacity-40 transition-all duration-500"
                   role="menuitem"
                   tabIndex={-1}

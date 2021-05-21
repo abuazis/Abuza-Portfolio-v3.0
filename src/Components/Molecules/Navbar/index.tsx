@@ -1,11 +1,14 @@
 import Fade from "react-reveal/Fade";
 import { useState } from "react";
 import { useLocation } from "react-router";
+import { useTranslation } from "react-i18next";
 import { NavbarResource } from "../../../Resources";
 import { Brand, SwitchMode, NavLink, Dropdown, Toggle } from "../../Atoms";
 
 const Navbar = (): JSX.Element => {
   const { pathname } = useLocation();
+
+  const { t, i18n } = useTranslation("main");
 
   const [show, setShow] = useState(false);
 
@@ -27,28 +30,39 @@ const Navbar = (): JSX.Element => {
               </div>
               <div className="hidden lg:block lg:ml-6">
                 <div className="flex space-x-10 lg:space-x-12">
-                  {NavbarResource.navigations.map((value) => (
-                    <NavLink
-                      title={value.name}
-                      active={false}
-                      isMobile={false}
-                      link={
-                        pathname === "/"
-                          ? value.route
-                          : value.route === "/projects"
-                          ? value.route
-                          : "/"
-                      }
-                      isSection={
-                        pathname === "/"
-                          ? value.isSection
-                          : value.route === "/projects"
-                          ? value.isSection
-                          : false
-                      }
-                    />
-                  ))}
-                  <Dropdown active="EN" datas={NavbarResource.languages} />
+                  <NavLink
+                    title={t("navigation.introduction.name")}
+                    active={false}
+                    isMobile={false}
+                    link={t("navigation.introduction.route")}
+                    isSection={!(pathname === "/") ? false : true}
+                  />
+                  <NavLink
+                    title={t("navigation.projects.name")}
+                    active={false}
+                    isMobile={false}
+                    link={t("navigation.projects.route")}
+                    isSection={false}
+                  />
+                  <NavLink
+                    title={t("navigation.skills.name")}
+                    active={false}
+                    isMobile={false}
+                    link={t("navigation.skills.route")}
+                    isSection={!(pathname === "/") ? false : true}
+                  />
+                  <NavLink
+                    title={t("navigation.contact.name")}
+                    active={false}
+                    isMobile={false}
+                    link={t("navigation.contact.route")}
+                    isSection={!(pathname === "/") ? false : true}
+                  />
+                  <Dropdown
+                    active={i18n.language}
+                    datas={NavbarResource.datas}
+                    languages={NavbarResource.languages}
+                  />
                   <div className="py-4">
                     <SwitchMode />
                   </div>
@@ -62,28 +76,38 @@ const Navbar = (): JSX.Element => {
           <Fade>
             <div className="lg:hidden" id="mobile-menu">
               <div className="px-2 pt-5 pb-3 space-y-1 flex flex-col items-center">
-                {NavbarResource.navigations.map((value) => (
-                  <NavLink
-                    title={value.name}
-                    active={false}
-                    isMobile={true}
-                    onClick={handleShow}
-                    link={
-                      pathname === "/"
-                        ? value.route
-                        : value.route === "/projects"
-                        ? value.route
-                        : "/"
-                    }
-                    isSection={
-                      pathname === "/"
-                        ? value.isSection
-                        : value.route === "/projects"
-                        ? value.isSection
-                        : false
-                    }
-                  />
-                ))}
+                <NavLink
+                  title={t("navigation.introduction.name")}
+                  active={false}
+                  isMobile={true}
+                  onClick={handleShow}
+                  link={t("navigation.introduction.route")}
+                  isSection={!(pathname === "/") ? false : true}
+                />
+                <NavLink
+                  title={t("navigation.projects.name")}
+                  active={false}
+                  isMobile={true}
+                  onClick={handleShow}
+                  link={t("navigation.projects.route")}
+                  isSection={false}
+                />
+                <NavLink
+                  title={t("navigation.skills.name")}
+                  active={false}
+                  isMobile={true}
+                  onClick={handleShow}
+                  link={t("navigation.skills.route")}
+                  isSection={!(pathname === "/") ? false : true}
+                />
+                <NavLink
+                  title={t("navigation.contact.name")}
+                  active={false}
+                  isMobile={true}
+                  onClick={handleShow}
+                  link={t("navigation.contact.route")}
+                  isSection={!(pathname === "/") ? false : true}
+                />
               </div>
             </div>
           </Fade>

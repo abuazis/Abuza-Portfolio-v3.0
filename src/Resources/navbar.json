@@ -1,26 +1,5 @@
 {
   "brandName": "Abu Aziz",
-  "languages": ["English - EN", "Indonesian - ID", "Japanese - JP"],
-  "navigations": [
-    {
-      "name": "Introduction",
-      "route": "/#introduction",
-      "isSection": true
-    },
-    {
-      "name": "Projects",
-      "route": "/projects",
-      "isSection": false
-    },
-    {
-      "name": "Skills & Tools",
-      "route": "/#skillstools",
-      "isSection": true
-    },
-    {
-      "name": "Contact",
-      "route": "/#contact",
-      "isSection": true
-    }
-  ]
+  "datas": ["English - EN", "Indonesian - ID", "Japanese - JP"],
+  "languages": ["en", "id", "jp"]
 }

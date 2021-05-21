@@ -1,9 +1,9 @@
 import React, { useContext, useState } from "react";
 import Fade from "react-reveal/Fade";
+import { useTranslation } from "react-i18next";
 import { ThemeContext } from "../../Contexts";
 import {
   ContactResource,
-  IntroductionResource,
   ProjectsResource,
   SkillsResource,
 } from "../../Resources";
@@ -27,12 +27,15 @@ import {
 
 const Home = (): JSX.Element => {
   const iconDark: string[] = [IcWhatsapp, IcCall, IcEmail, IcLinked];
+
   const iconLight: string[] = [
     IcWhatsappWhite,
     IcCallWhite,
     IcEmailWhite,
     IcLinkedWhite,
   ];
+
+  const { t } = useTranslation("main");
 
   const [more, setMore] = useState<boolean | string>(false);
 
@@ -50,23 +53,27 @@ const Home = (): JSX.Element => {
           <Fade>
             <div className="lg:flex-grow lg:w-1/2 lg:pr-16 flex flex-col lg:items-start lg:text-left mb-16 lg:mb-0 items-center text-center">
               <h1 className="title-font sm:text-4xl text-3xl mb-5 font-medium text-gray-900 dark:text-white transition-all duration-500">
-                {IntroductionResource.hiText}
+                {t("introduction.greeting")}
               </h1>
               <h1 className="title-font sm:text-4xl text-3xl mb-5 font-semibold text-gray-900 dark:text-white transition-all duration-500">
-                {IntroductionResource.introName}
+                {t("introduction.name")}
               </h1>
               <p className="mb-8 leading-8 dark:text-fontDark transition-all duration-500">
-                {IntroductionResource.whoMe}
+                {t("introduction.description")}
               </p>
               <div className="flex justify-center space-x-6">
-                {IntroductionResource.callToAction.map((value) => (
-                  <Button
-                    title={value.title}
-                    link={value.route}
-                    isBordered={value.isBordered}
-                    isSection={value.route === "#contact" ? true : false}
-                  />
-                ))}
+                <Button
+                  title={t("button.projects")}
+                  link="/projects"
+                  isBordered={false}
+                  isSection={false}
+                />
+                <Button
+                  title={t("button.contact")}
+                  link="#contact"
+                  isBordered={true}
+                  isSection={true}
+                />
               </div>
             </div>
           </Fade>
@@ -88,10 +95,10 @@ const Home = (): JSX.Element => {
           <Fade>
             <div className="flex flex-col text-center w-full mb-16">
               <h1 className="title-font sm:text-4xl text-3xl mb-4 font-semibold text-gray-900 dark:text-white transition-all duration-500">
-                Selected Projects
+                {t("projects.selected")}
               </h1>
               <p className="lg:w-2/3 mx-auto leading-relaxed text-base dark:text-fontDark transition-all duration-500">
-                The best project I have ever worked on is below here
+                {t("projects.subtitle")}
               </p>
             </div>
           </Fade>
@@ -104,10 +111,10 @@ const Home = (): JSX.Element => {
           <div className="flex flex-row justify-center mt-16">
             <Fade bottom>
               {more ? (
-                <Button title="Show More" link="/projects" isBordered={true} />
+                <Button title={t("projects.more")} link="/projects" isBordered={true} />
               ) : (
                 <a onClick={handleMore}>
-                  <Button title="Show More" isBordered={true} />
+                  <Button title={t("projects.more")} isBordered={true} />
                 </a>
               )}
             </Fade>
@@ -121,10 +128,10 @@ const Home = (): JSX.Element => {
           <Fade>
             <div className="flex flex-col text-center w-full mb-16">
               <h1 className="title-font sm:text-4xl text-3xl mb-4 font-semibold text-gray-900 dark:text-white transition-all duration-500">
-                Skills & Tools
+                {t("skills.title")}
               </h1>
               <p className="lg:w-2/3 mx-auto leading-relaxed text-base dark:text-fontDark transition-all duration-500">
-                The tech stack is growing so fast, we have to be prepared for it
+                {t("skills.subtitle")}
               </p>
             </div>
           </Fade>
@@ -151,10 +158,10 @@ const Home = (): JSX.Element => {
           <Fade>
             <div className="flex flex-col text-center w-full mb-12">
               <h1 className="title-font sm:text-4xl text-3xl mb-4 font-semibold text-gray-900 dark:text-white transition-all duration-500">
-                Contact Me
+                {t("contact.title")}
               </h1>
               <p className="lg:w-2/3 mx-auto leading-relaxed text-base dark:text-fontDark transition-all duration-500">
-                Contact me if you are interested in executing your idea
+                {t("contact.subtitle")}
               </p>
             </div>
           </Fade>

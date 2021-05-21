@@ -1,0 +1,70 @@
+{
+  "introduction": {
+    "greeting": "Hi, こんにちは!",
+    "name": "Nama Saya Abu Aziz",
+    "description": "Saya adalah seorang Software Developer yang berfokus pada Mobile Development. Saya siap untuk menjalankan ide bisnis Anda dan membangun startup dengan bekerja sama secara cerdas untuk meraih kesuksesan. Mari kita mulai melakukannya bung!"
+  },
+  "button": {
+    "projects": "Lihat Portofolio",
+    "contact": "Hubungi Saya"
+  },
+  "navigation": {
+    "introduction": {
+      "name": "Introduction",
+      "route": "/#introduction",
+      "isSection": true
+    },
+    "projects": {
+      "name": "Projects",
+      "route": "/projects",
+      "isSection": false
+    },
+    "skills": {
+      "name": "Skills & Tools",
+      "route": "/#skillstools",
+      "isSection": true
+    },
+    "contact": {
+      "name": "Contact",
+      "route": "/#contact",
+      "isSection": true
+    }
+  },
+  "projects": {
+    "selected": "Projek Terbaik",
+    "subtitle": "Projek pilihan yang pernah saya kerjakan ada dibawah ini",
+    "more": "Tampilkan Lebih Banyak"
+  },
+  "skills": {
+    "title": "Framework & Tools",
+    "subtitle": "Teknologi berkembang begitu cepat, kita harus segera mempersiapkannya"
+  },
+  "contact": {
+    "title": "Hubungi Saya",
+    "subtitle": "Kontak saya jika anada tertarik menjalankan ide bisnis anda"
+  },
+  "portfolio": {
+    "title": "Projek Portofolio",
+    "subtitle": "Semua projek portofolio yang sudah saya selesaikan dibawah ini"
+  },
+  "apps": {
+    "all": "All Projects",
+    "mobile": "Mobile Apps",
+    "web": "Web Apps",
+    "desktop": "Desktop Apps",
+    "ml": "Machine Learning",
+    "library": "Library / Tool"
+  },
+  "detail": {
+    "back": "Kembali ke Projek",
+    "visit": "Kunjungi Projek",
+    "available": "Tersedia Di",
+    "technology": "Teknologi & Arsitektur",
+    "language": "Bahasa Pemrograman",
+    "framework": "Framework",
+    "database": "Database",
+    "library": "Library",
+    "architecture": "Architecture Pattern",
+    "resource": "Database & Resource"
+  }
+}
